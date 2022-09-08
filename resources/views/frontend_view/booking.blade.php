@@ -250,7 +250,11 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 </div>
 
 <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit">
-
+<br>
+<br>
+<h2 style="text-align: center;">Booking Date</h2>
+<div  style="margin-bottom: 10px;margin-top: 10px;">
+<span class="wpcf7-form-control-wrap yourname">Booking Date :<input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span></div>
 <br>
 <h2 style="text-align: center;">Time Slot</h2>
 <div class="fusion-columns fusion-clearfix">

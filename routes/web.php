@@ -49,12 +49,12 @@ Route::get('/contact', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
-Route::get('/user/dashboard', function () {
-    return view('backend_view.dashboard');
+Route::get('/home', function () {
+    return view('home');
 })->middleware('auth');
 Route::get('/user/booking_admin', function () {
     return view('backend_view.booking_admin');

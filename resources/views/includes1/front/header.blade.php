@@ -4,7 +4,7 @@
 <div class="fusion-header">
 <div class="fusion-row">
 <div class="fusion-logo" data-margin-top="5px" data-margin-bottom="5px" data-margin-left="0px" data-margin-right="0px">
-<a class="fusion-logo-link" href="../index.htm">
+<a class="fusion-logo-link" href="/login">
 <!-- standard logo -->
 <img src="../wp-content/uploads/2020/03/Aisshwarya-Banquet-logo-svg-150x150ppf.svg" srcset="../wp-content/uploads/2020/03/Aisshwarya-Banquet-logo-svg-150x150ppf.svg 1x" width="150" height="150" alt="Welcome to Aisshwarya Banquet Hall, Pune Logo" data-retina_logo_url="" class="fusion-standard-logo">
 <!-- mobile logo -->

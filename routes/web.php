@@ -46,19 +46,30 @@ Route::get('/blog', function () {
 Route::get('/contact', function () {
     return view('frontend_view.contact');
 });
+Route::get('/vendor', function () {
+    return view('frontend_view.vendor');
+});
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
-
 Route::get('/home', function () {
     return view('home');
 })->middleware('auth');
+
 Route::get('/user/booking_admin', function () {
     return view('backend_view.booking_admin');
 })->middleware('auth');
+
+Route::get('/user/category', function () {
+    return view('backend_view.category');
+})->middleware('auth');
+Route::get('/user/vendor', function () {
+    return view('backend_view.vendor');
+})->middleware('auth');
+
+
 
 
 

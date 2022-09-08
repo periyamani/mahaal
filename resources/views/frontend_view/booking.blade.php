@@ -465,7 +465,9 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
                                                                 </tr>
                                                                 </tbody>
                                                             </table>
-                                                           
+                                                            <div class="text-right m-r-20">
+                                                                <a href="/vendor" class=" b-b-primary text-primary">View all Projects</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

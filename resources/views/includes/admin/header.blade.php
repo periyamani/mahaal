@@ -71,7 +71,7 @@
                               </div>
                           </div>
                       </div>
-                      <a href="index-2.html">
+                      <a href="/">
                           <img class="img-fluid" src="{{URL::asset('admin/images/logo.png')}}" alt="Theme-Logo" />
                       </a>
                       <a class="mobile-options waves-effect waves-light">

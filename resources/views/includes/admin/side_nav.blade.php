@@ -40,7 +40,7 @@
                           </div>
                           <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Home</div>
                           <ul class="pcoded-item pcoded-left-item">
-                              <li class="active">
+                              <li class="">
                                   <a href="/home" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
@@ -55,6 +55,13 @@
                                   <a href="/user/booking_admin" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Bookings</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="/user/category" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.form-components.main">Category</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>

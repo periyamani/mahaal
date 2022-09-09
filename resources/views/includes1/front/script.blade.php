@@ -7,6 +7,7 @@
 var buttonizer_ajax = {"ajaxurl":"https:\/\/aisshwaryabanquethall.com\/wp-admin\/admin-ajax.php","version":"2.1.9","buttonizer_path":"https:\/\/aisshwaryabanquethall.com\/wp-content\/plugins\/buttonizer-multifunctional-button","buttonizer_assets":"https:\/\/aisshwaryabanquethall.com\/wp-content\/plugins\/buttonizer-multifunctional-button\/assets\/","base_url":"https:\/\/aisshwaryabanquethall.com","current":[],"in_preview":"","is_admin":"","cache":"a1b649481d0ee912dc719481d5b34acf","enable_ga_clicks":"1"};
 
 </script>
+
 <script type='text/javascript' src='../wp-content/plugins/buttonizer-multifunctional-button/assets/frontend.min.js?v=7c18c737af0919db884d585b5f82e461&#038;ver=5.4.6'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -16,3 +17,4 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/aisshwaryabanquethall.com\/wp-json
 <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.2.2'></script>
 <script type='text/javascript' src='../wp-content/uploads/fusion-scripts/2910c43dea7a6128a525c6327c6ad894.min.js?ver=3.0.2'></script>
 <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js?ver=5.4.6'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

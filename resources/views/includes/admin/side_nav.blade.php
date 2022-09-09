@@ -60,8 +60,15 @@
                               </li>
                               <li>
                                   <a href="/user/category" class="waves-effect waves-dark">
-                                      <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                      <span class="pcoded-micon"><i class="ti-menu-alt"></i><b>FC</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Category</span>
+                                      <span class="pcoded-mcaret"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="/user/vendor" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.form-components.main">Vendor</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
@@ -69,18 +76,18 @@
         
                           </ul>
         
-                          
-        
-                          <div class="pcoded-navigation-label" data-i18n="nav.category.other">Other</div>
+                          <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Other</div>
                           <ul class="pcoded-item pcoded-left-item">
-                              <li class="pcoded-hasmenu ">
-                                  <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                      <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>M</b></span>
-                                      <span class="pcoded-mtext" data-i18n="nav.menu-levels.main">Settings</span>
+                              <li class="">
+                                  <a href="#" class="waves-effect waves-dark">
+                                      <span class="pcoded-micon"><i class="ti-settings"></i><b>M</b></span>
+                                      <span class="pcoded-mtext" data-i18n="nav.dash.main">Settings</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
-                                  
                               </li>
+                              
                           </ul>
+        
+                          
                       </div>
                   </nav>

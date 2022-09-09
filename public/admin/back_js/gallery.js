@@ -551,10 +551,10 @@ function festivaltable() {
                             fromefullvalue =
                                 '<button class="btn btn-outline-success btn-icon me-3" onclick="editshowvalue(' +
                                 fromedate +
-                                ')"><i class="bx bxs-edit"></i></button>' +
+                                ')"><i class="ti-pencil"></i></button>' +
                                 '<button class="btn btn-outline-danger btn-icon me-3" onclick="Alert(' +
                                 fromedate +
-                                ')"><i class="bx bx-trash me-1"></i></button>';
+                                ')"><i class="ti-trash"></i></button>';
                             return fromefullvalue;
                         },
                     },

@@ -186,7 +186,7 @@
 
                                 <div class="col-sm-12 mb-0">
 
-                                    <label for="emailBasic" class="form-label">Title<span
+                                    <label for="emailBasic" class="form-label">Name<span
                                             class="add_title star">*</span></label>
                                     <input type="text" id="emailBasic" name="title" class="form-control">
 
@@ -276,7 +276,7 @@
 
                             <div class="col-sm-12 mb-0">
 
-                                <label for="emailBasic" class="form-label">Title <span
+                                <label for="emailBasic" class="form-label">Nmae <span
                                         class="edd_title star">*</span></label>
                                 <input type="hidden" name="id">
                                 <input type="text" id="edit_title" name="title" class="form-control">

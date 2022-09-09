@@ -154,7 +154,7 @@
                             <thead>
                                 <tr>
                                     <th>Reg.No</th>
-                                    <th>Gallery Tittle</th>
+                                    <th>Vendor Name</th>
                                     <th>Category</th>
                                     <th>Description</th>
                                     <th>Image</th>
@@ -354,7 +354,7 @@
 <script src="{{URL::asset('admin/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js')}}"></script>
 <script src="{{URL::asset('admin/vendor/libs/sweetalert2/sweetalert2.js')}}"></script>
 
-<script src="{{URL::asset('admin/back_js/category.js')}}"></script>
+<script src="{{URL::asset('admin/back_js/gallery.js')}}"></script>
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
 <script src="{{URL::asset('admin/vendor/libs/quill/katex.js')}}"></script>

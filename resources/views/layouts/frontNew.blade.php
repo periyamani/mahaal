@@ -11,7 +11,7 @@
 
     @yield('content')
     
-
+@include('includes1.front.modal')
     @include('includes1.front.footer')
 
     @include('includes1.front.script')

@@ -49,6 +49,9 @@ Route::get('/contact', function () {
 Route::get('/vendor', function () {
     return view('frontend_view.vendor');
 });
+Route::get('/profile', function () {
+    return view('frontend_view.profile');
+});
 
 Auth::routes();
 

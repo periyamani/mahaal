@@ -82,8 +82,7 @@
 <div class="fusion-sides-frame"></div>
 <div id="wrapper" class="fusion-wrapper">
 <div id="home" style="position:relative;top:-1px;"></div>
-
-
+<link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css">
 
 <div id="sliders-container">
 <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -224,39 +223,14 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 <div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 15% 0px 15%;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">Booking</h2>
 </div><div class="fusion-sep-clear"></div><div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;"><div class="fusion-separator-border sep-single sep-solid" style="border-color:#a19060;border-top-width:2px;"></div></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-2">
 
-<form action="/contactus/#wpcf7-f1289-p15-o2" method="post" class="wpcf7-form init" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1289">
-<input type="hidden" name="_wpcf7_version" value="5.2.2">
-<input type="hidden" name="_wpcf7_locale" value="en_US">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1289-p15-o2">
-<input type="hidden" name="_wpcf7_container_post" value="15">
-<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-</div>
-<div class="fusion-columns fusion-clearfix">
-<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap yourname"><input type="text" name="yourname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="NAME *"></span></div>
-<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap mobile"><input type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="MOBILE NO *"></span></div>
-<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="EMAIL ID *"></span> </div>
-<div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD *"></span> </div>
-</div>
-<div class="fusion-columns fusion-clearfix" style="margin-bottom: 20px;">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="ADDRESS"></textarea></span>
-</div>
-</div>
-
-<input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit">
 <br>
-<br>
-<h2 style="text-align: center;">Booking Date</h2>
+<h2 style="text-align: left;">Booking Date</h2>
 <div  style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap yourname">Booking Date :<input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span></div>
+<span class="wpcf7-form-control-wrap yourname">
+    <input type="text" data-role="calendarpicker"></span></div>
 <br>
-<h2 style="text-align: center;">Time Slot</h2>
+<hr>
+<h2 style="text-align: left;">Time Slot</h2>
 <div class="fusion-columns fusion-clearfix">
 <div class="cat time9-10-a">
    <label>
@@ -335,15 +309,13 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 </div>
 </div>
 <br>
-<h2 style="text-align: center;">Vendor</h2>
-<br>
+<hr>
+<h2 style="text-align: left;">Vendor</h2>
+
 <!--  project and team member start -->
-<div class="col-xl-12 col-md-12">
+<div class="row">
                                                 <div class="card table-card">
-                                                    <div class="card-header">
-                                                        <h5>Vendors</h5>
-                                                        
-                                                    </div>
+                                                    
                                                     <div class="card-block">
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
@@ -360,10 +332,9 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
                                                                                 </label>
                                                                             </div>
                                                                         </div>
-                                                                        Assigned</th>
-                                                                    <th>Name</th>
-                                                                    <th>Due Date</th>
-                                                                    <th class="text-right">Priority</th>
+                                                                        Name</th>
+                                                                    <th>Mobile No</th>
+                                                                    
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -382,15 +353,15 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
                                                                         <div class="d-inline-block align-middle">
                                                                             <img src="admin/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                             <div class="d-inline-block">
-                                                                                <h6>John Deo</h6>
+                                                                                <h6>DD Studio</h6>
                                                                                 <p class="text-muted m-b-0">Photography</p>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td>Able Pro</td>
-                                                                    <td>Jun, 26</td>
-                                                                    <td class="text-right"><label class="label label-danger">Low</label></td>
+                                                                    <td>9876543210</td>
+                                                                    
                                                                 </tr>
+                                                                
                                                                 <tr>
                                                                     <td>
                                                                         <div class="chk-option">
@@ -404,91 +375,33 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
                                                                             </div>
                                                                         </div>
                                                                         <div class="d-inline-block align-middle">
-                                                                            <img src="admin/images/avatar-5.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                            <img src="admin/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                             <div class="d-inline-block">
-                                                                                <h6>Jenifer Vintage</h6>
-                                                                                <p class="text-muted m-b-0">Decorations</p>
+                                                                                <h6>Catering</h6>
+                                                                                <p class="text-muted m-b-0">Catering</p>
                                                                             </div>
                                                                         </div>
                                                                     </td>
-                                                                    <td>Mashable</td>
-                                                                    <td>March, 31</td>
-                                                                    <td class="text-right"><label class="label label-primary">high</label></td>
+                                                                    <td>9876543210</td>
+                                                                    
                                                                 </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr">
-                                                                                                <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                            </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="d-inline-block align-middle">
-                                                                            <img src="admin/images/avatar-3.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                            <div class="d-inline-block">
-                                                                                <h6>William Jem</h6>
-                                                                                <p class="text-muted m-b-0">Catering services</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>Flatable</td>
-                                                                    <td>Aug, 02</td>
-                                                                    <td class="text-right"><label class="label label-success">medium</label></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr">
-                                                                                                <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                            </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="d-inline-block align-middle">
-                                                                            <img src="admin/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                            <div class="d-inline-block">
-                                                                                <h6>David Jones</h6>
-                                                                                <p class="text-muted m-b-0">Makeup</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>Guruable</td>
-                                                                    <td>Sep, 22</td>
-                                                                    <td class="text-right"><label class="label label-primary">high</label></td>
-                                                                </tr>
+                                        
                                                                 </tbody>
                                                             </table>
-                                                            <div class="text-right m-r-20">
-                                                                <a href="/vendor" class=" b-b-primary text-primary">View all Projects</a>
-                                                            </div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <br>
                                             <br>
-<h2 style="text-align: center;">Booking Conformation</h2>
- <div class="fusion-columns fusion-clearfix">
-<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap yourname">Booking Date :<input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span></div>
-<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap mobile">Booking Time :<input type="time" name="time" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span></div>
-<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap your-email">Vendor Name :<input type="text" name="vendor" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Vendor *"></span> </div>
-</div>
+
 <div class="fusion-columns fusion-clearfix" style="text-align:center;">
 <div class="col-lg-12 col-md-12 col-sm-12">
-<input type="submit" value="BOOKING NOW" class="wpcf7-form-control wpcf7-submit">
+<input type="submit" value="BOOKING NOW" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;">
 </div>
 </div>
-<div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div></form>
+<div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div>
 
 
 
@@ -506,4 +419,5 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 @endsection
 
 @section('pageScript')
+<script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
 @stop

@@ -2,7 +2,7 @@
 @section('pagestyles')
 
 <link rel="stylesheet" type="text/css" href="admin/vendor/style.css">
-
+<link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css">
     <style>
     .fusion-columns {
     margin: 15px -15px !important;
@@ -67,6 +67,20 @@
 .time7-8-p input:checked + span{background-color: #9a9a9a;}
 .time8-9-p input:checked + span{background-color: #9a9a9a;}
 .time9-10-p input:checked + span{background-color: #9a9a9a;}
+
+a:not([class]) {
+    position: relative;
+    color: #747474 !important;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.fusion-footer-widget-area .widget a:hover {
+    color: #a19060 !important;
+    text-decoration-line: unset !important;
+}
     </style>
 
 @stop
@@ -82,7 +96,7 @@
 <div class="fusion-sides-frame"></div>
 <div id="wrapper" class="fusion-wrapper">
 <div id="home" style="position:relative;top:-1px;"></div>
-<link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css">
+
 
 <div id="sliders-container">
 <div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -419,5 +433,6 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 @endsection
 
 @section('pageScript')
+
 <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
 @stop

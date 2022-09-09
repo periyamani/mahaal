@@ -60,10 +60,10 @@
             <div class="form-group">
               <input type="password" class="form-control" id="password" placeholder="Your password...">
             </div>
-            <p style="text-align: end; margin: 0;">Forgot Password?</p>
+            <p style="text-align: end; margin: 0;" style="cursor: pointer">Forgot Password?</p>
             <button type="button" class="btn btn-info btn-block btn-round" style="width: 100%;">Login</button>
           </form>
-          <div class="signup-section">Not a member yet? <a onclick="register()" class="text-info"> Register</a>.</div>
+          <div class="signup-section">Not a member yet? <a onclick="register()" class="text-info" style="cursor: pointer"> Register</a>.</div>
           
         </div>
       </div>
@@ -104,7 +104,7 @@
               {{-- <p style="text-align: end; margin: 0;">Forgot Password?</p> --}}
               <button type="button" class="btn btn-info btn-block btn-round" style="width: 100%;">Register</button>
             </form>
-            <div class="signup-section">Already member? <a onclick="login()" class="text-info"> Login</a>.</div>
+            <div class="signup-section">Already member? <a onclick="login()" class="text-info" style="cursor: pointer"> Login</a>.</div>
             
           </div>
         </div>
@@ -123,15 +123,15 @@ $(document).ready(function() {
   })
 });
 $(document).ready(function() {             
-    $('#registerModal').modal('show');$('#loginModal').modal('hide');
+    ('#registerModal').modal('show');$('#loginModal').modal('hide');
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
 });
 function login(){
-    $('#loginModal').modal('show');$('#registerModal').modal('hide');
+    jQuery('#loginModal').modal('show');jQuery('#registerModal').modal('hide');
 }
 function register(){
-    $('#registerModal').modal('show');$('#loginModal').modal('hide');
+    jQuery('#registerModal').modal('show');jQuery('#loginModal').modal('hide');
 }
 </script>

@@ -17,4 +17,4 @@ var wpcf7 = {"apiSettings":{"root":"https:\/\/aisshwaryabanquethall.com\/wp-json
 <script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.2.2'></script>
 <script type='text/javascript' src='../wp-content/uploads/fusion-scripts/2910c43dea7a6128a525c6327c6ad894.min.js?ver=3.0.2'></script>
 <script type='text/javascript' src='../wp-includes/js/wp-embed.min.js?ver=5.4.6'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --}}

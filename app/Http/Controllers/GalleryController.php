@@ -20,7 +20,9 @@ class GalleryController extends Controller
             $gallery = new Gallery;
             $gallery->title = $input['title'];
             $gallery->category_id = $input['category_id'];
-            $gallery->description = $input['description']; 
+            $gallery->description = $input['description'];
+            $gallery->number = $input['add_number'];
+            $gallery->amount = $input['add_amount']; 
             // dd($gallery); 
             $gallery->date = $input['date']; 
             // $gallery->time = $input['time'];
@@ -113,6 +115,8 @@ class GalleryController extends Controller
             $gallery->category_id = $input['category_id'];
             $gallery->title = $input['title'];
             $gallery->description = $input['description']; 
+            $gallery->number = $input['edit_number'];
+            $gallery->amount = $input['edit_amount']; 
             // dd($gallery); 
             $gallery->date = $input['date']; 
             // dd($gallery); 

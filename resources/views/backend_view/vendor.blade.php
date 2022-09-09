@@ -155,7 +155,9 @@
                                 <tr>
                                     <th>Reg.No</th>
                                     <th>Vendor Name</th>
+                                    <th>Mobile No</th>
                                     <th>Category</th>
+                                    <th>Amount</th>
                                     <th>Description</th>
                                     <th>Image</th>
                                     <th>Action</th>
@@ -177,7 +179,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel1">Add Gallery</h5>
+                        <h5 class="modal-title" id="exampleModalLabel1">Add Vendor</h5>
                         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -189,6 +191,12 @@
                                     <label for="emailBasic" class="form-label">Name<span
                                             class="add_title star">*</span></label>
                                     <input type="text" id="emailBasic" name="title" class="form-control">
+
+                                </div>
+                                <div class="col-sm-12 mb-0">
+
+                                    <label for="emailBasic" class="form-label">Mobile.no<span class="add_num star">*</span></label>
+                                    <input type="text" id="add_number" name="add_number" class="form-control" oninput="this.value =this.value.replace(/[^0-9.]/g, '')" pattern=".{10,}" maxlength="10" required="">
 
                                 </div>
                                 <div class="col-sm-12 mb-0">
@@ -215,6 +223,12 @@
                                     <label for="nameBasic" class="form-label">Description<span
                                             class="add_des star">*</span></label></label>
                                     <input type="text" id="nameBasic" name="description" class="form-control">
+
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="nameBasic" class="form-label">Amount<span
+                                            class="add_am star">*</span></label></label>
+                                            <input type="text" oninput="this.value =this.value.replace(/[^0-9.]/g, '')" required="" id="add_amount" name="add_amount" class="form-control">
 
                                 </div>
                                 <div class="col-sm-12">
@@ -283,6 +297,12 @@
 
                             </div>
                             <div class="col-sm-12 mb-0">
+
+                                    <label for="emailBasic" class="form-label">Mobile.no<span class="edd_num star">*</span></label>
+                                    <input type="text" id="edit_number" name="edit_number" class="form-control" oninput="this.value =this.value.replace(/[^0-9.]/g, '')" pattern=".{10,}" maxlength="10" required="">
+
+                            </div>
+                            <div class="col-sm-12 mb-0">
                                 <!-- <label for="dobBasic" class="form-label">Date</label> -->
                                 <input type="hidden" id="edit_date" name="date"
                                     value="<?php date_default_timezone_set('Asia/Calcutta'); echo date("m-d-Y / H:i:s"); ?>"
@@ -308,6 +328,12 @@
                                         class="edd_des star">*</span></label>
                                 <input type="text" id="edit_description" name="description" class="form-control">
                             </div>
+                            <div class="col-sm-12 mb-3">
+                                    <label for="nameBasic" class="form-label">Amount<span
+                                            class="edd_am star">*</span></label></label>
+                                            <input type="text" oninput="this.value =this.value.replace(/[^0-9.]/g, '')" required="" id="edit_amount" name="edit_amount" class="form-control">
+
+                                </div>
                             <div class="col-sm-12">
                                 <label for="nameBasic" class="form-label">Photo upload<span
                                         class="photo_alert star">*</span></label>
@@ -354,7 +380,7 @@
 <script src="{{URL::asset('admin/vendor/libs/datatables-rowgroup-bs5/rowgroup.bootstrap5.js')}}"></script>
 <script src="{{URL::asset('admin/vendor/libs/sweetalert2/sweetalert2.js')}}"></script>
 
-<script src="{{URL::asset('admin/back_js/gallery.js')}}"></script>
+<script src="{{URL::asset('admin/back_js/vendor.js')}}"></script>
 <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
 <script src="{{URL::asset('admin/vendor/libs/quill/katex.js')}}"></script>

@@ -52,6 +52,9 @@ Route::get('/vendor', function () {
 Route::get('/profile', function () {
     return view('frontend_view.profile');
 });
+Route::get('/order_summary', function () {
+    return view('frontend_view.order_summary');
+});
 
 Auth::routes();
 

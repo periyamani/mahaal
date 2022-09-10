@@ -116,18 +116,7 @@
 
 
 <script>
-$(document).ready(function() {             
-    
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-});
-$(document).ready(function() {             
-    ('#registerModal').modal('show');$('#loginModal').modal('hide');
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-});
+
 function login(){
     jQuery('#loginModal').modal('show');jQuery('#registerModal').modal('hide');
 }

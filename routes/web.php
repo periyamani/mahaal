@@ -43,6 +43,12 @@ Route::get('/gallery', function () {
 Route::get('/blog', function () {
     return view('frontend_view.blog');
 });
+Route::get('/booking_details', function () {
+    return view('frontend_view.booking_details');
+});
+Route::get('/profile', function () {
+    return view('frontend_view.profile');
+});
 Route::get('/contact', function () {
     return view('frontend_view.contact');
 });

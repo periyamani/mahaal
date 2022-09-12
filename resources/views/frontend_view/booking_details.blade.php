@@ -81,6 +81,62 @@ a:not([class]) {
     color: #a19060 !important;
     text-decoration-line: unset !important;
 }
+
+.tabs {
+  --outer-padding: 6px;
+  --border-radius: 1000px;
+  --background-offset: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: var(--border-radius);
+  padding: var(--outer-padding);
+}
+.tabs::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  transform: translateX(var(--background-offset));
+  width: calc(50% - var(--outer-padding));
+  height: calc(100% - var(--outer-padding) * 2);
+  background-color: #a19060;
+  border-radius: var(--border-radius);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tabs__button {
+  text-align: center;
+  flex-basis: 50%;
+  font-weight: 500;
+  padding: 1em;
+  position: relative;
+  border-radius: var(--border-radius);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.tabs__button:focus {
+  box-shadow: inset 0 0 0 2px #a19060;
+}
+.tabs__button[aria-selected=true] {
+  color: #ffffff;
+}
+
+/**
+Tidy up pen
+*/
+.supports {
+  display: none;
+}
+@supports (--css: variables) {
+  .supports {
+    display: block;
+  }
+}
+
     </style>
 
 @stop
@@ -233,191 +289,114 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 <div class="fusion-row" style="max-width:100%;">
 <section id="content" class="full-width">
 <div id="post-913" class="post-913 page type-page status-publish hentry">
-<span class="entry-title rich-snippet-hidden">Booking</span><span class="vcard rich-snippet-hidden"><span class="fn"><a href="../author/admin/index.htm" title="Posts by admin" rel="author">admin</a></span></span><span class="updated rich-snippet-hidden">2020-08-06T18:48:27+05:30</span>						<div class="post-content">
-<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 15% 0px 15%;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">Booking</h2>
+<span class="entry-title rich-snippet-hidden">Booking Details</span><span class="vcard rich-snippet-hidden"><span class="fn"><a href="../author/admin/index.htm" title="Posts by admin" rel="author">admin</a></span></span><span class="updated rich-snippet-hidden">2020-08-06T18:48:27+05:30</span>						<div class="post-content">
+<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">Booking Details</h2>
 </div><div class="fusion-sep-clear"></div><div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;"><div class="fusion-separator-border sep-single sep-solid" style="border-color:#a19060;border-top-width:2px;"></div></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-2">
 
 <br>
-<h2 style="text-align: left;">Booking Date</h2>
-<div  style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap yourname">
-    <input type="text" data-role="calendarpicker"></span></div>
-<br>
-<hr>
-<h2 style="text-align: left;">Time Slot</h2>
-<div class="fusion-columns fusion-clearfix">
-<div class="cat time9-10-a">
-   <label>
-      <input type="checkbox" value="1"><span>9AM - 10AM</span>
-   </label>
+
+<div class="tabs">
+    <a class="tabs__button" aria-selected="true" onclick="pending()">
+        Upcoming Booking Details
+    </a>
+    <a class="tabs__button" onclick="completed()">
+         Completed Booking Details
+    </a>
 </div>
 
-<div class="cat time10-11-a">
-   <label>
-      <input type="checkbox" value="1"><span>10AM - 11AM</span>
-   </label>
+<div class="supports pending" >
+    <div class="container">
+        <div class="table-responsive">
+          <table class="basic-table table-headers table table-hover">
+            <thead style="border-bottom: 4px solid #a7986b !important;">
+              <tr>
+                <th>Date</th>
+                <th>Time Slot</th>
+                <th>Status</th>
+                <th>Payment Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody  style="border-bottom: 4px solid #a7986b !important;">
+              <tr>
+                <td>September 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:red;">Pending</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+              <tr>
+                <td>September 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:red;">Pending</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+              <tr>
+                <td>September 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:red;">Pending</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</div>
+<div class="supports completed" style="display: none;">
+    <div class="container">
+        <div class="table-responsive">
+          <table class="basic-table table-headers table table-hover">
+            <thead style="border-bottom: 4px solid #a7986b !important;">
+              <tr>
+                <th>Date</th>
+                <th>Time Slot</th>
+                <th>Status</th>
+                <th>Payment Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody  style="border-bottom: 4px solid #a7986b !important;">
+              <tr>
+                <td>Novenber 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:green;">Completed</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+              <tr>
+                <td>Novenber 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:green;">Completed</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+              <tr>
+                <td>Novenber 13, 2013</td>
+                <td>3 PM - 4 PM</td>
+                <td style="color:green;">Completed</td>
+                <td style="color:green;">Completed</td>
+                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                    font-weight: bold;
+                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 </div>
 
-<div class="cat time11-12-a">
-   <label>
-      <input type="checkbox" value="1"><span>11AM - 12AM</span>
-   </label>
-</div>
-
-<div class="cat time12-1-p">
-   <label>
-      <input type="checkbox" value="1"><span>12PM - 1PM</span>
-   </label>
-</div>
-
-<div class="cat time1-2-p" >
-   <label style="cursor: not-allowed;">
-      <input type="" value="1"><span>1PM - 2PM</span>
-   </label>
-</div>
-
-<div class="cat time2-3-p">
-   <label  style="cursor: not-allowed;">
-      <input type="" value="1"><span>2PM - 3PM</span>
-   </label>
-</div>
-
-  <div class="cat time3-4-p">
-   <label  style="cursor: not-allowed;">
-      <input type="" value="1"><span>3PM - 4PM</span>
-   </label>
-</div>
-
-  <div class="cat time4-5-p">
-   <label>
-      <input type="checkbox" value="1"><span>4PM - 5PM</span>
-   </label>
-</div>
-<div class="cat time5-6-p">
-   <label>
-      <input type="checkbox" value="1"><span>5PM - 6PM</span>
-   </label>
-</div>
-
-  <div class="cat time6-7-p">
-   <label>
-      <input type="checkbox" value="1"><span>6PM - 7PM</span>
-   </label>
-</div>
-
-  <div class="cat time7-8-p">
-   <label>
-      <input type="checkbox" value="1"><span>7PM - 8PM</span>
-   </label>
-</div>
-<div class="cat time8-9-p">
-   <label>
-      <input type="checkbox" value="1"><span>8PM - 9PM</span>
-   </label>
-</div>
-
-  <div class="cat time9-10-p">
-   <label>
-      <input type="checkbox" value="1"><span>9PM - 10PM</span>
-   </label>
-</div>
-</div>
-<br>
-<hr>
-<h2 style="text-align: left;">Vendor</h2>
-
-<!--  project and team member start -->
-<div class="row">
-                                                <div class="card table-card">
-                                                    
-                                                    <div class="card-block">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                <tr style="text-align: left;">
-                                                                    <th>
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr">
-                                                                                            <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                        </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        Name</th>
-                                                                    <th>Mobile No</th>
-                                                                    
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr">
-                                                                                                <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                            </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="d-inline-block align-middle">
-                                                                            <img src="admin/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                            <div class="d-inline-block">
-                                                                                <h6>DD Studio</h6>
-                                                                                <p class="text-muted m-b-0">Photography</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>9876543210</td>
-                                                                    
-                                                                </tr>
-                                                                
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" value="">
-                                                                                    <span class="cr">
-                                                                                                <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                            </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="d-inline-block align-middle">
-                                                                            <img src="admin/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                            <div class="d-inline-block">
-                                                                                <h6>Catering</h6>
-                                                                                <p class="text-muted m-b-0">Catering</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>9876543210</td>
-                                                                    
-                                                                </tr>
-                                        
-                                                                </tbody>
-                                                            </table>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                            <br>
-
-<div class="fusion-columns fusion-clearfix" style="text-align:center;">
-<div class="col-lg-12 col-md-12 col-sm-12">
-    <input type="submit" value="BOOKING NOW" style="    background: #a7986b;
-    font-weight: bold;
-    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit">
-{{-- <input type="submit" value="BOOKING NOW" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;"> --}}
-</div>
-</div>
 <div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div>
 
 
@@ -436,6 +415,42 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 @endsection
 
 @section('pageScript')
+<script>
+    let container = document.querySelector(".tabs");
+let buttons = container.querySelectorAll(".tabs__button");
 
-<script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+buttons.forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        switchActive(btn);
+    });
+});
+
+function switchActive(activeBtn) {
+    const position = [...buttons].indexOf(activeBtn);
+
+    buttons.forEach((element) => {
+        element.setAttribute(
+            "aria-selected",
+            element !== activeBtn ? "false" : "true"
+        );
+    });
+
+    container.style.setProperty("--background-offset", position * 100 + "%");
+}
+
+function completed(){
+    jQuery('.pending').hide();
+    jQuery('.completed').show();
+    
+}
+
+
+function pending(){
+    jQuery('.completed').hide();
+    jQuery('.pending').show();
+    
+    
+}
+
+</script>
 @stop

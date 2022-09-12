@@ -11,13 +11,16 @@
 .modal-header .close {
   margin-top: -2.5rem;
 }
-
+.form-group{
+  margin-bottom: 11px;
+}
 .form-title {
   margin: -2rem 0rem 2rem;
 }
 
 .btn-round {
   border-radius: 3rem;
+  width: 100%; background: #8d7c52; padding: 11px; color: white; font-size: 17px; border: 1px solid #8d7c52;
 }
 
 .delimiter {
@@ -30,6 +33,8 @@
 
 .signup-section {
   padding: 0.3rem 0rem;
+  font-size: 15px;
+    text-align: center;
 }
 </style>
 
@@ -39,7 +44,7 @@
   </button>  
 </div> --}}
 
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header border-bottom-0">
@@ -60,7 +65,7 @@
             <div class="form-group">
               <input type="password" class="form-control" id="password" placeholder="Your password...">
             </div>
-            <p style="text-align: end; margin: 0;" style="cursor: pointer">Forgot Password?</p>
+            <p style="text-align: end; margin: 0;cursor:pointer;font-size: 13px;">Forgot Password?</p>
             <button type="button" class="btn btn-info btn-block btn-round" style="width: 100%;">Login</button>
           </form>
           <div class="signup-section">Not a member yet? <a onclick="register()" class="text-info" style="cursor: pointer"> Register</a>.</div>
@@ -72,7 +77,7 @@
 </div>
 
 
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header border-bottom-0">

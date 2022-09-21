@@ -18,6 +18,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('registration1','App\Http\Controllers\RegisterController@register');
+Route::post('login1','App\Http\Controllers\RegisterController@login');
   // Vendor
   Route::post('addGallery','App\Http\Controllers\GalleryController@create');
   Route::get('showGallery','App\Http\Controllers\GalleryController@show');

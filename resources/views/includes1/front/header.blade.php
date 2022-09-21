@@ -149,7 +149,7 @@
                             </a>
                         </li>
                         <li id="menu-item-1698" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1698" data-item-id="1698">
-                            <a href="/booking" class="fusion-arrow-highlight">
+                            <a onclick="loginForm()" class="fusion-arrow-highlight">
                                 <span class="menu-text">
                                     Booking
                                     <span class="fusion-arrow-svg">
@@ -172,10 +172,11 @@
                                 </span>
                             </a>
                         </li>
-                        <li id="menu-item-1213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1213" data-item-id="1213">
-                            <a data-toggle="modal" data-target="#loginModal" class="fusion-arrow-highlight">
-                                <span class="menu-text">
-                                    Raj
+                      
+                        <li id="menu-item-1213" class="ui_Check_name menu-item menu-item-type-post_type menu-item-object-page menu-item-1213" data-item-id="1213">
+                            <a  class="fusion-arrow-highlight">
+                                <span class="menu-text" id="uname">
+                                    
                                     <span class="fusion-arrow-svg">
                                         <svg height="12px" width="23px">
                                             <path d="M0 0 L11.5 12 L23 0 Z" fill="#ffffff"></path>
@@ -186,8 +187,23 @@
                             <ul class="dropdown">
                                 <li style="padding: 11px;"><a href="/profile">Profile</a></li>
                                 <li style="padding: 11px;"><a href="/booking_details">Booking Details</a></li>
+                                <li style="padding: 11px;"><a href="" onclick="logout()">Logout</a></li>
                             </ul>
                         </li>
+                       
+                        <li id="menu-item-1213" class="ui_Check_login menu-item menu-item-type-post_type menu-item-object-page menu-item-1213" data-item-id="1213">
+                            <a data-toggle="modal" data-target="#loginModal" class="fusion-arrow-highlight">
+                                <span class="menu-text">
+                                   Login
+                                    <span class="fusion-arrow-svg">
+                                        <svg height="12px" width="23px">
+                                            <path d="M0 0 L11.5 12 L23 0 Z" fill="#ffffff"></path>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        
                     </ul>
                 </nav>
                 <div class="fusion-mobile-menu-icons">

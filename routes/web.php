@@ -59,6 +59,10 @@ Route::get('/profile', function () {
     return view('frontend_view.profile');
 });
 
+Route::get('/loginnn', function () {
+    return view('auth.login');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

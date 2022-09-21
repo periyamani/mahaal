@@ -248,25 +248,25 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 <div class="fusion-columns fusion-clearfix">
 <div class="cat time9-10-a">
    <label>
-      <input type="checkbox" value="1"><span>9AM - 10AM</span>
+      <input type="radio" name="timeslot" value="9AM - 10AM"><span>9AM - 10AM</span>
    </label>
 </div>
 
 <div class="cat time10-11-a">
    <label>
-      <input type="checkbox" value="1"><span>10AM - 11AM</span>
+      <input type="radio" name="timeslot" value="10AM - 11AM"><span>10AM - 11AM</span>
    </label>
 </div>
 
 <div class="cat time11-12-a">
    <label>
-      <input type="checkbox" value="1"><span>11AM - 12AM</span>
+      <input type="radio" name="timeslot" value="11AM - 12AM"><span>11AM - 12AM</span>
    </label>
 </div>
 
 <div class="cat time12-1-p">
    <label>
-      <input type="checkbox" value="1"><span>12PM - 1PM</span>
+      <input type="radio" name="timeslot" value="12PM - 1PM"><span>12PM - 1PM</span>
    </label>
 </div>
 
@@ -290,35 +290,35 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 
   <div class="cat time4-5-p">
    <label>
-      <input type="checkbox" value="1"><span>4PM - 5PM</span>
+      <input type="radio" name="timeslot" value="4PM - 5PM"><span>4PM - 5PM</span>
    </label>
 </div>
 <div class="cat time5-6-p">
    <label>
-      <input type="checkbox" value="1"><span>5PM - 6PM</span>
+      <input type="radio" name="timeslot" value="5PM - 6PM"><span>5PM - 6PM</span>
    </label>
 </div>
 
   <div class="cat time6-7-p">
    <label>
-      <input type="checkbox" value="1"><span>6PM - 7PM</span>
+      <input type="radio" name="timeslot" value="^PM -7PM"><span>6PM - 7PM</span>
    </label>
 </div>
 
   <div class="cat time7-8-p">
    <label>
-      <input type="checkbox" value="1"><span>7PM - 8PM</span>
+      <input type="radio" name="timeslot" value="7PM - 8PM"><span>7PM - 8PM</span>
    </label>
 </div>
 <div class="cat time8-9-p">
    <label>
-      <input type="checkbox" value="1"><span>8PM - 9PM</span>
+      <input type="radio" name="timeslot" value="8PM - 9PM"><span>8PM - 9PM</span>
    </label>
 </div>
 
   <div class="cat time9-10-p">
    <label>
-      <input type="checkbox" value="1"><span>9PM - 10PM</span>
+      <input type="radio" name="timeslot" value="9PM - 10PM"><span>9PM - 10PM</span>
    </label>
 </div>
 </div>

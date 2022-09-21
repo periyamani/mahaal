@@ -51,7 +51,6 @@
         
                           </ul>
         
-<<<<<<< HEAD
                           <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Other</div>
                           <ul class="pcoded-item pcoded-left-item">
                               <li class="">
@@ -63,9 +62,7 @@
                               </li>
                               
                           </ul>
-=======
-                          
->>>>>>> 525d3fc00f19ff491964733eff006a9e1b317258
+
         
                           
                       </div>

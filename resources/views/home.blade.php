@@ -1,6 +1,13 @@
 @extends('layouts.adminview')
 @section('pagestyles')
-    
+
+<style>
+        .header-navbar {
+    min-height: 71px !important;
+    padding-top: 7px !important;
+    padding-left: 0px !important;
+}
+</style>
 
 @stop
 @section('content')

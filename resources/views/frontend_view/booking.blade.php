@@ -412,7 +412,14 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 
 <div class="fusion-columns fusion-clearfix" style="text-align:center;">
 <div class="col-lg-12 col-md-12 col-sm-12">
+<<<<<<< HEAD
 <a href="/order_summary" class="fusion-arrow-highlight"><input type="submit" value="BOOKING NOW" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;"></a>
+=======
+    <input type="submit" value="BOOKING NOW" style="    background: #a7986b;
+    font-weight: bold;
+    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit">
+{{-- <input type="submit" value="BOOKING NOW" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;"> --}}
+>>>>>>> f7cd203cdeb45a116b27379deabb83660ce30f7a
 </div>
 </div>
 <div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div>

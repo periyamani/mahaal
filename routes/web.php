@@ -56,6 +56,13 @@ Route::get('/order_summary', function () {
     return view('frontend_view.order_summary');
 });
 
+Route::get('/booking_details', function () {
+    return view('frontend_view.booking_details');
+});
+Route::get('/profile', function () {
+    return view('frontend_view.profile');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

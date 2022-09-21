@@ -1,3 +1,21 @@
+<style>
+
+    ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+</style>
+
 <header class="fusion-header-wrapper">
     <div class="fusion-header-v1 fusion-logo-alignment fusion-logo-left fusion-sticky-menu- fusion-sticky-logo- fusion-mobile-logo-1 fusion-mobile-menu-design-modern">
         <div class="fusion-header-sticky-height"></div>
@@ -157,7 +175,7 @@
                         <li id="menu-item-1213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1213" data-item-id="1213">
                             <a data-toggle="modal" data-target="#loginModal" class="fusion-arrow-highlight">
                                 <span class="menu-text">
-                                    Login
+                                    Raj
                                     <span class="fusion-arrow-svg">
                                         <svg height="12px" width="23px">
                                             <path d="M0 0 L11.5 12 L23 0 Z" fill="#ffffff"></path>
@@ -165,6 +183,10 @@
                                     </span>
                                 </span>
                             </a>
+                            <ul class="dropdown">
+                                <li style="padding: 11px;"><a href="/profile">Profile</a></li>
+                                <li style="padding: 11px;"><a href="/booking_details">Booking Details</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>

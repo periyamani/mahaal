@@ -222,7 +222,7 @@
                <div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div>
                <div class="fusion-sep-clear"></div>
                <div class="fusion-text fusion-text-1">
-                  <h2 style="text-align: center;">Booking</h2>
+                  <h2 style="text-align: center;">Profile</h2>
                </div>
                <div class="fusion-sep-clear"></div>
                <div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;">
@@ -241,256 +241,31 @@
                      </div>
                      <div class="fusion-columns fusion-clearfix">
                         <div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap yourname"><input type="text" name="yourname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="NAME *"></span>
+                           <span class="wpcf7-form-control-wrap yourname"><input value="Raj" type="text" name="yourname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="NAME *"></span>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap mobile"><input type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="MOBILE NO *"></span>
+                           <span class="wpcf7-form-control-wrap mobile"><input value="9876543210 " type="text" name="mobile" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="MOBILE NO *"></span>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="EMAIL ID *"></span> 
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
+                           <span class="wpcf7-form-control-wrap your-email"><input value="test@gmail.com" type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="EMAIL ID *"></span> 
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="PASSWORD *"></span> 
-                        </div>
+                       
                      </div>
                      <div class="fusion-columns fusion-clearfix" style="margin-bottom: 20px;">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                            <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="ADDRESS"></textarea></span>
                         </div>
                      </div>
-                     <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit">
+                     <input type="submit" value="UPDATE" class="wpcf7-form-control wpcf7-submit">
                      <br>
                      <br>
-                     <h2 style="text-align: center;">Booking Date</h2>
-                     <div  style="margin-bottom: 10px;margin-top: 10px;">
-                        <span class="wpcf7-form-control-wrap yourname">Booking Date :<input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span>
-                     </div>
-                     <br>
-                     <h2 style="text-align: center;">Time Slot</h2>
-                     <div class="fusion-columns fusion-clearfix">
-                        <div class="cat time9-10-a">
-                           <label>
-                           <input type="checkbox" value="1"><span>9AM - 10AM</span>
-                           </label>
-                        </div>
-                        <div class="cat time10-11-a">
-                           <label>
-                           <input type="checkbox" value="1"><span>10AM - 11AM</span>
-                           </label>
-                        </div>
-                        <div class="cat time11-12-a">
-                           <label>
-                           <input type="checkbox" value="1"><span>11AM - 12AM</span>
-                           </label>
-                        </div>
-                        <div class="cat time12-1-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>12PM - 1PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time1-2-p" >
-                           <label style="cursor: not-allowed;">
-                           <input type="" value="1"><span>1PM - 2PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time2-3-p">
-                           <label  style="cursor: not-allowed;">
-                           <input type="" value="1"><span>2PM - 3PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time3-4-p">
-                           <label  style="cursor: not-allowed;">
-                           <input type="" value="1"><span>3PM - 4PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time4-5-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>4PM - 5PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time5-6-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>5PM - 6PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time6-7-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>6PM - 7PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time7-8-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>7PM - 8PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time8-9-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>8PM - 9PM</span>
-                           </label>
-                        </div>
-                        <div class="cat time9-10-p">
-                           <label>
-                           <input type="checkbox" value="1"><span>9PM - 10PM</span>
-                           </label>
-                        </div>
-                     </div>
-                     <br>
-                     <h2 style="text-align: center;">Vendor</h2>
-                     <br>
-                     <!--  project and team member start -->
-                     <div class="col-xl-12 col-md-12">
-                        <div class="card table-card">
-                           <div class="card-header">
-                              <h5>Vendors</h5>
-                           </div>
-                           <div class="card-block">
-                              <div class="table-responsive">
-                                 <table class="table table-hover">
-                                    <thead>
-                                       <tr style="text-align: left;">
-                                          <th>
-                                             <div class="chk-option">
-                                                <div class="checkbox-fade fade-in-primary">
-                                                   <label class="check-task">
-                                                   <input type="checkbox" value="">
-                                                   <span class="cr">
-                                                   <i class="cr-icon fa fa-check txt-default"></i>
-                                                   </span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             Assigned
-                                          </th>
-                                          <th>Name</th>
-                                          <th>Due Date</th>
-                                          <th class="text-right">Priority</th>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td>
-                                             <div class="chk-option">
-                                                <div class="checkbox-fade fade-in-primary">
-                                                   <label class="check-task">
-                                                   <input type="checkbox" value="">
-                                                   <span class="cr">
-                                                   <i class="cr-icon fa fa-check txt-default"></i>
-                                                   </span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             <div class="d-inline-block align-middle">
-                                                <img src="admin/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                <div class="d-inline-block">
-                                                   <h6>John Deo</h6>
-                                                   <p class="text-muted m-b-0">Photography</p>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          <td>Able Pro</td>
-                                          <td>Jun, 26</td>
-                                          <td class="text-right"><label class="label label-danger">Low</label></td>
-                                       </tr>
-                                       <tr>
-                                          <td>
-                                             <div class="chk-option">
-                                                <div class="checkbox-fade fade-in-primary">
-                                                   <label class="check-task">
-                                                   <input type="checkbox" value="">
-                                                   <span class="cr">
-                                                   <i class="cr-icon fa fa-check txt-default"></i>
-                                                   </span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             <div class="d-inline-block align-middle">
-                                                <img src="admin/images/avatar-5.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                <div class="d-inline-block">
-                                                   <h6>Jenifer Vintage</h6>
-                                                   <p class="text-muted m-b-0">Decorations</p>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          <td>Mashable</td>
-                                          <td>March, 31</td>
-                                          <td class="text-right"><label class="label label-primary">high</label></td>
-                                       </tr>
-                                       <tr>
-                                          <td>
-                                             <div class="chk-option">
-                                                <div class="checkbox-fade fade-in-primary">
-                                                   <label class="check-task">
-                                                   <input type="checkbox" value="">
-                                                   <span class="cr">
-                                                   <i class="cr-icon fa fa-check txt-default"></i>
-                                                   </span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             <div class="d-inline-block align-middle">
-                                                <img src="admin/images/avatar-3.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                <div class="d-inline-block">
-                                                   <h6>William Jem</h6>
-                                                   <p class="text-muted m-b-0">Catering services</p>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          <td>Flatable</td>
-                                          <td>Aug, 02</td>
-                                          <td class="text-right"><label class="label label-success">medium</label></td>
-                                       </tr>
-                                       <tr>
-                                          <td>
-                                             <div class="chk-option">
-                                                <div class="checkbox-fade fade-in-primary">
-                                                   <label class="check-task">
-                                                   <input type="checkbox" value="">
-                                                   <span class="cr">
-                                                   <i class="cr-icon fa fa-check txt-default"></i>
-                                                   </span>
-                                                   </label>
-                                                </div>
-                                             </div>
-                                             <div class="d-inline-block align-middle">
-                                                <img src="admin/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                <div class="d-inline-block">
-                                                   <h6>David Jones</h6>
-                                                   <p class="text-muted m-b-0">Makeup</p>
-                                                </div>
-                                             </div>
-                                          </td>
-                                          <td>Guruable</td>
-                                          <td>Sep, 22</td>
-                                          <td class="text-right"><label class="label label-primary">high</label></td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
-                                 <div class="text-right m-r-20">
-                                    <a href="/vendor" class=" b-b-primary text-primary">View all Projects</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <br>
-                     <br>
-                     <h2 style="text-align: center;">Booking Conformation</h2>
-                     <div class="fusion-columns fusion-clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap yourname">Booking Date :<input type="date" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap mobile">Booking Time :<input type="time" name="time" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder=" *"></span>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 10px;margin-top: 10px;">
-                           <span class="wpcf7-form-control-wrap your-email">Vendor Name :<input type="text" name="vendor" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Vendor *"></span> 
-                        </div>
-                     </div>
-                     <div class="fusion-columns fusion-clearfix" style="text-align:center;">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                           <input type="submit" value="BOOKING NOW" class="wpcf7-form-control wpcf7-submit">
-                        </div>
-                     </div>
+                    
+                    
+                     
+                    
+                     
+                     
+                     
                      <div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div>
                   </form>
                </div>

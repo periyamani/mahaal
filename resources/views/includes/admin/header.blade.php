@@ -72,9 +72,7 @@
                           </div>
                       </div>
                       <a href="/">
-                          MAHAL                  </a>
-                      <a class="mobile-options waves-effect waves-light">
-                          <i class="ti-more"></i>
+                      <img src="{{URL::asset('admin/images/logo-a.png')}}" alt="">
                       </a>
                   </div>
                 

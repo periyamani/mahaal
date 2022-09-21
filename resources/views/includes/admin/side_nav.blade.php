@@ -5,10 +5,10 @@
                       <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                       <div class="pcoded-inner-navbar main-menu">
                           <div class="">
-                              <div class="" style="align:center;">
+                              <!-- <div class="" style="align:center;">
                                   <img class="" style="margin: 13px 9px 13px 57px;width: 102px;" src="../wp-content/uploads/2020/03/Aisshwarya-Banquet-logo-svg-150x150ppf.svg" alt="User-Profile-Image">
                                   
-                              </div>
+                              </div> -->
         
                               
                           </div>

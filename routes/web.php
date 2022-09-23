@@ -52,11 +52,15 @@ Route::get('/vendor', function () {
 Route::get('/profile', function () {
     return view('frontend_view.profile');
 });
-Route::get('/order_summary', function () {
+Route::get('/order_summary/{id}', function () {
     return view('frontend_view.order_summary');
 });
 
-Route::get('/booking_details', function () {
+Route::get('/viewBooking/{id}', function () {
+    return view('frontend_view.viewBooking');
+});
+
+Route::get('/booking_details/{id}', function () {
     return view('frontend_view.booking_details');
 });
 Route::get('/profile', function () {

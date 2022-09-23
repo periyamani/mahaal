@@ -332,7 +332,7 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 <div id="post-913" class="post-913 page type-page status-publish hentry">
 <span class="entry-title rich-snippet-hidden">Order</span><span class="vcard rich-snippet-hidden"><span class="fn"><a href="../author/admin/index.htm" title="Posts by admin" rel="author">admin</a></span></span><span class="updated rich-snippet-hidden">2020-08-06T18:48:27+05:30</span>						<div class="post-content">
 <div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 15% 0px 15%;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">Order Summery</h2>
-</div><div class="fusion-sep-clear"></div><div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;"><div class="fusion-separator-border sep-single sep-solid" style="border-color:#a19060;border-top-width:2px;"></div></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-2">
+</div><div class="fusion-sep-clear"></div><div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;"><div class="fusion-separator-border sep-single sep-solid" style="border-color:#a19060;border-top-width:2px;"></div></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-2" id="getImage">
 
 <div
     class="fusion-column-wrapper fusion-flex-column-wrapper-legacy"
@@ -357,7 +357,7 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
     <ul class="df">
    <div class="fusion-li-item-content " >
                        <b>Booking Date </b> <br />
-                        10-09-2022<br />
+                        <span id="dateData">10-09-2022</span><br />
                        
                     </div>
     </ul> 
@@ -371,7 +371,7 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
    <div class="fusion-li-item-content " >
                             
                     <b>Booking Time </b> <br />
-                    9 AM - 10 AM 
+                    <span id="timeData"> 9 AM - 10 AM </span>
                        
                     </div>
    </ul>
@@ -383,44 +383,13 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
             <!-- <div class="fusion-sep-clear"></div> -->
             
             <div class="fusion-sep-clear"></div>
-            <ul class="fusion-checklist fusion-checklist-2" style="font-size: 16px; line-height: 23.8px;margin-left: 11%;">
-                
-                <li class="fusion-li-item book-li">
-                    <h3>VENDORS</h3>
-                    <span style="height: 31.8px;  font-size: 24px; width: 74.8px; margin: 23px 0px 21px 0px; margin-right: 9.8px;" class="icon-wrapper circle-no"><img src="admin/images/avatar-3.jpg" alt="user image" ></span>
-                    <div class="fusion-li-item-content text-book" style="margin-left: 50%;">
-                    <div class="d-inline-block align-middle">
-                        
-                   
-                    NAME  :  Jimmy Nelson - Famous weddings Photography<br />
-                    SERVICES : Photography <br />
-                    CONTACT : 9876543120 
-                    </div>
-                </li>
-                <li class="fusion-li-item book-li">
-                   
-                    <span style="height: 31.8px;  font-size: 24px; width: 74.8px; margin: 23px 0px 21px 0px; margin-right: 9.8px;" class="icon-wrapper circle-no"><img src="admin/images/avatar-3.jpg" alt="user image" ></span>
-                    <div class="fusion-li-item-content text-book" style="margin-left: 50%;">
-                    <div class="d-inline-block align-middle">
-                        
-                   
-                    NAME : John Smith Catering World -  Marriage Catering services<br />
-                    SERVICES : Catering<br />
-                    CONTACT : 9876543120 
-                    </div>
-                </li>
-                <li class="fusion-li-item book-li">
-                   
-                    <span style="height: 31.8px;  font-size: 24px; width: 74.8px; margin: 23px 0px 21px 0px; margin-right: 9.8px;" class="icon-wrapper circle-no"><img src="admin/images/avatar-3.jpg" alt="user image" ></span>
-                    <div class="fusion-li-item-content text-book" style="margin-left: 50%;">
-                    <div class="d-inline-block align-middle">
-                        
-                   
-                    NAME : Manavarai decoration -Natural Decoration|Marriage  <br />
-                    SERVICES : Decoration<br />
-                    CONTACT : 9876543120 
-                    </div>
-                </li>
+            
+            <ul class="fusion-checklist fusion-checklist-2" style="font-size: 16px; line-height: 23.8px;margin-left: 11%;" id="vendorList">
+              <h3>VENDORS</h3>
+            </ul>
+            <ul class="fusion-checklist fusion-checklist-2" style="font-size: 16px; line-height: 23.8px;margin-left: 11%;" id="vendorList">
+              
+              
                 
             </ul>
             <div class="fusion-sep-clear"></div>
@@ -429,12 +398,10 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
             <div class="fusion-sep-clear"></div>
            
         </div>
+        <input type="hidden" id="bookinggId">
     </div>
-    <div style=" padding: 0px 0px 0px 90px; ">
-    <a href="/booking" class="fusion-arrow-highlight"><input type="submit" value="EDIT" style="background: #b4a57e; color: white; font-size: 18px; border-radius: 6px;"></a>
-    <a href="#"  class="btn " data-toggle="modal" data-target="#opt" class="fusion-arrow-highlight"><input type="submit" value="SUBMIT" style="background: #999999; color: white; font-size: 18px; padding: -1px 0px 0px 90px; border-radius: 6px; "></a>
-    
-</div>
+    <input type="button" value="Send to Whatsapp" onclick="whatsappsentmsg()" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;">
+
    
     <br>
     
@@ -479,4 +446,51 @@ Pune – 411046.</p></div>
 @section('pageScript')
 
 <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+
+<script>
+  ggg();
+  function ggg(){
+    var myArray = window.location.pathname.split("/");
+
+    jQuery.ajax({
+            type: "POST",
+            url: "/api/bookingDetails",
+            data: {booking_id : myArray[2]},
+            dataType: 'json',
+            success: function(data) {
+             jQuery('#dateData').html(data['booking']['booking_date']);
+             jQuery('#timeData').html(data['booking']['booking_time']);
+             jQuery('#bookinggId').val(data['booking']['id']);
+             
+             if(data['vendor'].length > 0){
+              jQuery('#vendorList').empty();
+                  jQuery.each(data['vendor'], function( index, value ) {
+                    jQuery('#vendorList').append('<li class="fusion-li-item book-li"><span style="height: 31.8px;  font-size: 24px; width: 74.8px; margin: 23px 0px 21px 0px; margin-right: 9.8px;" class="icon-wrapper circle-no"><img src="./../gallery/'+value['photo']+'" alt="user image" ></span>'+
+                    '<div class="fusion-li-item-content text-book" style="margin-left: 50%;"><div class="d-inline-block align-middle">'+
+                    'NAME  :'+value['title']+'<br />'+
+                    'AMOUNT : Rs. '+value['amount']+' <br />'+
+                    'CATEGORY : '+value['cname']+' <br />'+
+                    'CONTACT :'+value['number']+' </div></li>');
+                  });
+              }
+            },
+        });
+  }
+
+
+function whatsappsentmsg(){
+  var bookId = jQuery('#bookinggId').val();
+  jQuery.ajax({
+            type: "POST",
+            url: "/api/whatsapp",
+            data: {booking_id : bookId},
+            dataType: 'json',
+            success: function(data) {
+             
+            },
+        });
+}
+
+</script>
+
 @stop

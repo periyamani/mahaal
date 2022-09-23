@@ -185,8 +185,8 @@
                                 </span>
                             </a>
                             <ul class="dropdown">
-                                <li style="padding: 11px;"><a href="/profile">Profile</a></li>
-                                <li style="padding: 11px;"><a href="/booking_details">Booking Details</a></li>
+                                {{-- <li style="padding: 11px;"><a href="/profile">Profile</a></li> --}}
+                                <li style="padding: 11px;"><a onclick="bookdetailsList()">Booking Details</a></li>
                                 <li style="padding: 11px;"><a href="" onclick="logout()">Logout</a></li>
                             </ul>
                         </li>

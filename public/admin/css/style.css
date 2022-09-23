@@ -16460,3 +16460,14 @@ body.dark {
   bottom: 50px;
   opacity: 1;
 }
+.add_model_op,.add_btn{
+  color: white !important;
+    background: green !important;
+}
+.page-header-title h5{
+  color: white !important;
+}
+.edit_submit_btn,.add_submit_btn gallery_submit{
+  color: white !important;
+    background: blue !important;
+}

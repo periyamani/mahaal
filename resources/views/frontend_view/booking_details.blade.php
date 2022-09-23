@@ -303,7 +303,11 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
          Completed Booking Details
     </a>
 </div>
-
+@php
+$user = explode("/",$_SERVER['REQUEST_URI']);
+$pendingList = DB::table('booking')->where('user_id',$user[2])->where('booking_status','Pending')->get();
+$completedList = DB::table('booking')->where('user_id',$user[2])->where('booking_status','Completed')->get();
+@endphp
 <div class="supports pending" >
     <div class="container">
         <div class="table-responsive">
@@ -318,33 +322,30 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
               </tr>
             </thead>
             <tbody  style="border-bottom: 4px solid #a7986b !important;">
+              @if(count($pendingList)>0)
+
+              @foreach($pendingList as $pList)
               <tr>
-                <td>September 13, 2013</td>
-                <td>3 PM - 4 PM</td>
+                <td>{{$pList->booking_date}}</td>
+                <td>{{$pList->booking_time}}</td>
                 <td style="color:red;">Pending</td>
+                @if($pList->payment_status == 'Pending')
+                <td style="color:red;">Pending</td>
+                @else
                 <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                @endif
+                
+                <td><input type="button" onclick="getBookView({{$pList->id}})" value="VIEW" style="    background: #a7986b;
                     font-weight: bold;
                     color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
               </tr>
+              @endforeach
+
+              @else
               <tr>
-                <td>September 13, 2013</td>
-                <td>3 PM - 4 PM</td>
-                <td style="color:red;">Pending</td>
-                <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
-                    font-weight: bold;
-                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+                <td colspan="5"> No Data Found</td>
               </tr>
-              <tr>
-                <td>September 13, 2013</td>
-                <td>3 PM - 4 PM</td>
-                <td style="color:red;">Pending</td>
-                <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
-                    font-weight: bold;
-                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
-              </tr>
+              @endif
             </tbody>
           </table>
         </div>
@@ -364,33 +365,30 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
               </tr>
             </thead>
             <tbody  style="border-bottom: 4px solid #a7986b !important;">
+              @if(count($completedList)>0)
+
+              @foreach($completedList as $pList)
               <tr>
-                <td>Novenber 13, 2013</td>
-                <td>3 PM - 4 PM</td>
+                <td>{{$pList->booking_date}}</td>
+                <td>{{$pList->booking_time}}</td>
                 <td style="color:green;">Completed</td>
+                @if($pList->payment_status == 'Pending')
+                <td style="color:red;">Pending</td>
+                @else
                 <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
+                @endif
+                
+                <td><input type="button" onclick="getBookView({{$pList->id}})" value="VIEW" style="    background: #a7986b;
                     font-weight: bold;
                     color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
               </tr>
+              @endforeach
+
+              @else
               <tr>
-                <td>Novenber 13, 2013</td>
-                <td>3 PM - 4 PM</td>
-                <td style="color:green;">Completed</td>
-                <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
-                    font-weight: bold;
-                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
+                <td colspan="5"> No Data Found</td>
               </tr>
-              <tr>
-                <td>Novenber 13, 2013</td>
-                <td>3 PM - 4 PM</td>
-                <td style="color:green;">Completed</td>
-                <td style="color:green;">Completed</td>
-                <td><input type="submit" value="VIEW" style="    background: #a7986b;
-                    font-weight: bold;
-                    color: #ffffff;    padding: 10px;" class="wpcf7-form-control wpcf7-submit"></td>
-              </tr>
+              @endif
             </tbody>
           </table>
         </div>
@@ -450,6 +448,10 @@ function pending(){
     jQuery('.pending').show();
     
     
+}
+
+function getBookView(data){
+  window.location.href = '/viewBooking/'+data;
 }
 
 </script>

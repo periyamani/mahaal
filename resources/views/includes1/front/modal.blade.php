@@ -248,6 +248,10 @@ function logout(){
                 window.location.reload();
 }
 
+function bookdetailsList(){
+  window.location.href = '/booking_details/'+sessionStorage.getItem("id");
+}
+
 jQuery("#registration").submit(function(e) {
         e.preventDefault();
         var mobileNum = jQuery("#registration").find('#email').val();

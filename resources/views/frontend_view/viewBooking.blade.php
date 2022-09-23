@@ -1,3 +1,4 @@
+
 @extends('layouts.frontNew')
 @section('pagestyles')
 
@@ -81,6 +82,102 @@ a:not([class]) {
     color: #a19060 !important;
     text-decoration-line: unset !important;
 }
+table {
+    font-family: 'SFUIDisplay';
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  
+  text-align: left;
+  padding: 8px;
+  
+}
+.logo-top{
+    text-align: center;
+}
+.logo-txt {
+    margin-top: 0 !important;
+    margin-bottom: 3px !important;
+    font-size: 92% !important;
+}
+.X{
+  margin: auto;
+  padding: 1% 2%;
+  max-width: 1440px;
+  border-radius: 5px;
+
+}
+
+.book-li{
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: 'Raleway', serif;
+}
+/*SG = style grid*/
+.SG{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.SG .sgLi{
+  min-width: 44%;
+  margin: 2% .35%;
+  display: inline-flex;
+  box-shadow: 0 2px 20px rgb(0 0 0 / 20%);
+}
+.SG .sgLi:hover{
+  box-shadow:0 5px 10px rgba(0,0,0,.15);}
+.SG .box{
+  width: 100%;
+  height: 100vh;
+  padding: 6% 18% 10px 1px;
+  background: #fff;
+  min-height: 80px;
+    max-height: 80px;
+  box-sizing: border-box;
+}
+
+.s18 li:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  display: inline-block;
+  background: url(//goo.gl/lcPSVD);
+  background-position: 50%;
+}
+.s19{list-style: none;}
+.s19 li:before{
+  content: '\f0a9';
+  margin-right: 15px;
+  font-family: FontAwesome;
+}
+.text-book {
+    margin-left: 18% !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+/* responsive grid*/
+@media (max-width: 970px){
+  .SG .sgLi{width: 180px;}}
+@media (max-width: 425px){
+  .SG .sgLi{width: 100%;}
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+ 
+    
     </style>
 
 @stop
@@ -233,172 +330,128 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 <div class="fusion-row" style="max-width:100%;">
 <section id="content" class="full-width">
 <div id="post-913" class="post-913 page type-page status-publish hentry">
-<span class="entry-title rich-snippet-hidden">Booking</span><span class="vcard rich-snippet-hidden"><span class="fn"><a href="../author/admin/index.htm" title="Posts by admin" rel="author">admin</a></span></span><span class="updated rich-snippet-hidden">2020-08-06T18:48:27+05:30</span>						<div class="post-content">
-<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 15% 0px 15%;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">Booking</h2>
+<span class="entry-title rich-snippet-hidden">Order</span><span class="vcard rich-snippet-hidden"><span class="fn"><a href="../author/admin/index.htm" title="Posts by admin" rel="author">admin</a></span></span><span class="updated rich-snippet-hidden">2020-08-06T18:48:27+05:30</span>						<div class="post-content">
+<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 mass-responsive-section nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="background-color: rgba(255,255,255,0);background-position: left top;background-repeat: no-repeat;padding-top:3%;padding-right:30px;padding-bottom:0px;padding-left:30px;margin-bottom: 0px;margin-top: 0px;border-width: 0px 0px 0px 0px;border-color:#eae9e9;border-style:solid;" id="section1"><div class="fusion-builder-row fusion-row"><div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last mass-intro" style="margin-top:42px;margin-bottom:20px;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;padding: 0px 15% 0px 15%;"><div class="imageframe-align-center"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img width="57" image_height="76" image_id="1565" title="D" src="../wp-content/uploads/2020/06/D-1.png" class="img-responsive wp-image-1565"></span></div><div class="fusion-sep-clear"></div><div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:5px;margin-bottom:5px;width:100%;"></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-1"><h2 style="text-align: center;">View Details</h2>
 </div><div class="fusion-sep-clear"></div><div class="fusion-separator" style="margin-left: auto;margin-right: auto;margin-top:0px;margin-bottom:30px;width:100%;max-width:206px;"><div class="fusion-separator-border sep-single sep-solid" style="border-color:#a19060;border-top-width:2px;"></div></div><div class="fusion-sep-clear"></div><div class="fusion-text fusion-text-2">
 
-<br>
-<form id="bookingOrder">
-<h2 style="text-align: left;">Booking Date</h2>
-<div  style="margin-bottom: 10px;margin-top: 10px;">
-<span class="wpcf7-form-control-wrap yourname">
-    <input type="text" id="bkDate" data-role="calendarpicker"></span></div>
-<br>
-<hr>
-<h2 style="text-align: left;">Time Slot</h2>
-<div class="fusion-columns fusion-clearfix">
-<div class="cat time9-10-a">
-   <label>
-      <input type="radio" name="timeslot" value="9AM - 10AM"><span>9AM - 10AM</span>
-   </label>
+<div
+    class="fusion-column-wrapper fusion-flex-column-wrapper-legacy"
+    style="background-position: left top; background-repeat: no-repeat; background-size: cover; background-color: rgb(245, 245, 245); padding-top: 2%;  min-height: 413px; height: auto;">
+    <div class="fusion-column-content-centered" style="min-height: 413px; height: auto;  ">
+        <div class="fusion-column-content">
+            <div class="fusion-text fusion-text-3 logo-top" >
+                   <img src="{{URL::asset('assets/AISSHWARYA-logo.png')}}" alt="" srcset="" style="width: 15%;">
+            </div>
+            
+            <div class="fusion-separator fusion-clearfix" style="float: left; margin-bottom: 30px; width: 100%; ">
+                <div class="fusion-separator-border sep-single sep-solid" style="border-color: #a19060; border-top-width: 2px;"></div>
+            </div>
+<div class="X">
+<ul class="SG">
+  <li class="sgLi">
+    <div class="box">
+    
+    <ul class="df">
+   <div class="fusion-li-item-content " >
+                       <b>Booking Date </b> <br />
+                        <span id="dateData">10-09-2022</span><br />
+                       
+                    </div>
+    </ul> 
+  </div>
+ </li> 
+  
+  
+ <li class="sgLi">
+    <div class="box">
+   <ul class="s1">
+   <div class="fusion-li-item-content " >
+                            
+                    <b>Booking Time </b> <br />
+                    <span id="timeData"> 9 AM - 10 AM </span>
+                       
+                    </div>
+   </ul>
+  </div>
+ </li>
+</ul>
+
+<ul class="SG">
+    <li class="sgLi">
+      <div class="box">
+      
+      <ul class="df">
+     <div class="fusion-li-item-content " >
+                         <b>Booking Status </b> <br />
+                          <span id="bstatus">10-09-2022</span><br />
+                         
+                      </div>
+      </ul> 
+    </div>
+   </li> 
+    
+    
+   <li class="sgLi">
+      <div class="box">
+     <ul class="s1">
+     <div class="fusion-li-item-content " >
+                              
+                      <b>Payment Status </b> <br />
+                      <span id="pstatus"> 9 AM - 10 AM </span>
+                         
+                      </div>
+     </ul>
+    </div>
+   </li>
+  </ul>
+
+</div>
+            <!-- <div class="fusion-sep-clear"></div> -->
+            
+            <div class="fusion-sep-clear"></div>
+            
+            <ul class="fusion-checklist fusion-checklist-2" style="font-size: 16px; line-height: 23.8px;margin-left: 11%;" id="vendorList">
+              <h3>VENDORS</h3>
+            </ul>
+            <ul class="fusion-checklist fusion-checklist-2" style="font-size: 16px; line-height: 23.8px;margin-left: 11%;" id="vendorList">
+              
+              
+                
+            </ul>
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-separator fusion-full-width-sep" style="margin-left: auto; margin-right: auto; margin-top: 20px; width: 100%;"></div>
+            <div class="fusion-sep-clear"></div>
+            <div class="fusion-sep-clear"></div>
+           
+        </div>
+    </div>
+
+   
+    <br>
+    
+    <div class="fusion-separator fusion-clearfix" style="float: left; margin-bottom: 30px; width: 100%; ">
+                <div class="fusion-separator-border sep-single sep-solid" style="border-color: #a19060; border-top-width: 2px;"></div>
+            </div>
+            <div class="fusion-sep-clear"></div>
+            <div class="logo-top" style=" font-size: 16px; margin-top: 6px;margin-bottom: -5px;"> 
+            <section id="text-2" class="fusion-footer-widget-column widget widget_text" style="border-style: solid;border-color:transparent;border-width:0px;"><h4 class="widget-title fusion-responsive-typography-calculated" data-fontsize="15" data-lineheight="22.5px" style="--fontSize:15; line-height: 1.5; --minFontSize:15;">AISSHWARYA BANQUET HALL</h4><div class="textwidget"><ul class="fusion-checklist fusion-checklist-1" style="font-size:14px;line-height:23.8px;">
+            <li class="fusion-li-item">
+<div class="fusion-li-item-content" >
+                <p class="logo-txt">12, 2A, Dalvi Park, <br>Near Shiv shrushti,<br>
+Katraj bypass, Ambegaon bk.<br>
+Pune – 411046.</p></div>
+            <br>
+
+
+</ul>
+
+<div style="clear:both;"></div></section>																					</div>
+    <div class="fusion-clearfix"></div>
+    
 </div>
 
-<div class="cat time10-11-a">
-   <label>
-      <input type="radio" name="timeslot" value="10AM - 11AM"><span>10AM - 11AM</span>
-   </label>
-</div>
 
-<div class="cat time11-12-a">
-   <label>
-      <input type="radio" name="timeslot" value="11AM - 12AM"><span>11AM - 12AM</span>
-   </label>
-</div>
-
-<div class="cat time12-1-p">
-   <label>
-      <input type="radio" name="timeslot" value="12PM - 1PM"><span>12PM - 1PM</span>
-   </label>
-</div>
-
-<div class="cat time1-2-p" >
-   <label style="cursor: not-allowed;">
-      <input type="" value="1"><span>1PM - 2PM</span>
-   </label>
-</div>
-
-<div class="cat time2-3-p">
-   <label  style="cursor: not-allowed;">
-      <input type="" value="1"><span>2PM - 3PM</span>
-   </label>
-</div>
-
-  <div class="cat time3-4-p">
-   <label  style="cursor: not-allowed;">
-      <input type="" value="1"><span>3PM - 4PM</span>
-   </label>
-</div>
-
-  <div class="cat time4-5-p">
-   <label>
-      <input type="radio" name="timeslot" value="4PM - 5PM"><span>4PM - 5PM</span>
-   </label>
-</div>
-<div class="cat time5-6-p">
-   <label>
-      <input type="radio" name="timeslot" value="5PM - 6PM"><span>5PM - 6PM</span>
-   </label>
-</div>
-
-  <div class="cat time6-7-p">
-   <label>
-      <input type="radio" name="timeslot" value="^PM -7PM"><span>6PM - 7PM</span>
-   </label>
-</div>
-
-  <div class="cat time7-8-p">
-   <label>
-      <input type="radio" name="timeslot" value="7PM - 8PM"><span>7PM - 8PM</span>
-   </label>
-</div>
-<div class="cat time8-9-p">
-   <label>
-      <input type="radio" name="timeslot" value="8PM - 9PM"><span>8PM - 9PM</span>
-   </label>
-</div>
-
-  <div class="cat time9-10-p">
-   <label>
-      <input type="radio" name="timeslot" value="9PM - 10PM"><span>9PM - 10PM</span>
-   </label>
-</div>
-</div>
-<br>
-<hr>
-<h2 style="text-align: left;">Vendor</h2>
-
-<!--  project and team member start -->
-<div class="row">
-                                                <div class="card table-card">
-                                                    
-                                                    <div class="card-block">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-hover">
-                                                                <thead>
-                                                                <tr style="text-align: left;">
-                                                                    <th style="width: 9px;">
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" id="vendorname" onclick="getAllCheck()">
-                                                                                    <span class="cr">
-                                                                                            <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                        </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                       </th>
-                                                                       <th>Name</th>
-                                                                       <th>Amount</th>
-                                                                       <th>Category</th>
-                                                                    <th>Mobile No</th>
-                                                                    
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    @php $vendors = DB::table('gallery')->join('category','category.id','=','gallery.category_id')->select('gallery.*','category.title as cname')->get();  @endphp
-                                                                    @if(count($vendors) > 0)
-                                                                    @foreach($vendors as $vendor)
-                                                                <tr>
-                                                                    <td style="width: 9px;">
-                                                                        <div class="chk-option">
-                                                                            <div class="checkbox-fade fade-in-primary">
-                                                                                <label class="check-task">
-                                                                                    <input type="checkbox" name="vendor" value="{{$vendor->id}}">
-                                                                                    <span class="cr">
-                                                                                                <i class="cr-icon fa fa-check txt-default"></i>
-                                                                                            </span>
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>{{$vendor->title}}</td>
-                                                                    <td>Rs. {{$vendor->amount}}</td>
-                                                                    <td>{{$vendor->cname}}</td>
-                                                                    <td>{{$vendor->number}}</td>
-                                                                    
-                                                                </tr>
-                                                                @endforeach
-                                                                @endif
-                                        
-                                                                </tbody>
-                                                            </table>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <br>
-                                            <br>
-
-<div class="fusion-columns fusion-clearfix" style="text-align:center;">
-<div class="col-lg-12 col-md-12 col-sm-12">
-<input type="button" value="BOOKING NOW" onclick="bookingNow()" style="background: #b4a57e; color: white; border-radius: 12px; font-size: 20px;">
-</form>
-</div>
-</div>
 <div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="border-width:1px;"></div>
-
 
 
 </div>
@@ -417,41 +470,36 @@ document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
 @section('pageScript')
 
 <script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
-<script>
-    function getAllCheck(){
-        if (jQuery('#vendorname').prop('checked')==true){ 
-            jQuery('[name="vendor"]').prop('checked', true);
-        }else{
-            jQuery('[name="vendor"]').prop('checked', false);
-        }
-    }
 
-     function bookingNow(){
-        var vendorData = [];
-        $('input[name="vendor"]:checked').each(function() {
-            vendorData.push(this.value);
-        });        
-        var formData = {
-            date : jQuery('#bkDate').val(),
-            timeslot : $('input[name="timeslot"]:checked').val(),
-            vendor : vendorData,
-            user_id : sessionStorage.getItem("id")
-        }
-        jQuery.ajax({
+<script>
+  ggg();
+  function ggg(){
+    var myArray = window.location.pathname.split("/");
+
+    jQuery.ajax({
             type: "POST",
-            url: "/api/orderBook",
-            data: formData,
+            url: "/api/bookingDetails",
+            data: {booking_id : myArray[2]},
             dataType: 'json',
             success: function(data) {
-              if(data && data['id']){
-                toastr.success("Book is added");
-                window.location.href = '/order_summary/'+data['id'];
-              }else{
-                toastr.error("Book is not added");
+             jQuery('#dateData').html(data['booking']['booking_date']);
+             jQuery('#timeData').html(data['booking']['booking_time']);
+             jQuery('#bstatus').html(data['booking']['booking_status']);
+             jQuery('#pstatus').html(data['booking']['payment_status']);
+             if(data['vendor'].length > 0){
+              jQuery('#vendorList').empty();
+                  jQuery.each(data['vendor'], function( index, value ) {
+                    jQuery('#vendorList').append('<li class="fusion-li-item book-li"><span style="height: 31.8px;  font-size: 24px; width: 74.8px; margin: 23px 0px 21px 0px; margin-right: 9.8px;" class="icon-wrapper circle-no"><img src="./../gallery/'+value['photo']+'" alt="user image" ></span>'+
+                    '<div class="fusion-li-item-content text-book" style="margin-left: 50%;"><div class="d-inline-block align-middle">'+
+                    'NAME  :'+value['title']+'<br />'+
+                    'AMOUNT : Rs. '+value['amount']+' <br />'+
+                    'CATEGORY : '+value['cname']+' <br />'+
+                    'CONTACT :'+value['number']+' </div></li>');
+                  });
               }
             },
         });
-        return false;
-    };
+  }
 </script>
+
 @stop

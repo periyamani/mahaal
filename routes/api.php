@@ -33,3 +33,7 @@ Route::get('ShowCategory','App\Http\Controllers\CategoryController@show');
 Route::post('editCategory','App\Http\Controllers\CategoryController@update');
 Route::get('CategoryValue','App\Http\Controllers\CategoryController@check');
 Route::delete('DeleteCategory','App\Http\Controllers\CategoryController@destroy');
+
+Route::post('orderBook','App\Http\Controllers\BookingController@create');
+Route::post('bookingDetails','App\Http\Controllers\BookingController@bookingDetails');
+Route::post('whatsapp','App\Http\Controllers\BookingController@whatsapp');

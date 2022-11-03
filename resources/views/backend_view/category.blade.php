@@ -154,7 +154,7 @@
                         <table class="dt-complex-header table table-bordered" style="border-color: #d4d8dd">
                             <thead>
                                 <tr>
-                                    <th>Reg.No</th>
+                                    <th>S.No</th>
                                     <th>Category</th>
                                     <th>Action</th>
                                 </tr>

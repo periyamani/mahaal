@@ -28,21 +28,21 @@
                           <ul class="pcoded-item pcoded-left-item">
                               <li>
                                   <a href="/user/booking_admin" class="waves-effect waves-dark">
-                                      <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                      <span class="pcoded-micon"><i class="ti-layers"></i><b>BO</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Bookings</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
                               <li>
                                   <a href="/user/category" class="waves-effect waves-dark">
-                                      <span class="pcoded-micon"><i class="ti-menu-alt"></i><b>FC</b></span>
+                                      <span class="pcoded-micon"><i class="ti-menu-alt"></i><b>CA</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Category</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
                               </li>
                               <li>
                                   <a href="/user/vendor" class="waves-effect waves-dark">
-                                      <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>
+                                      <span class="pcoded-micon"><i class="ti-user"></i><b>VE</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">Vendor</span>
                                       <span class="pcoded-mcaret"></span>
                                   </a>
@@ -51,7 +51,7 @@
         
                           </ul>
         
-                          <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Other</div>
+                          {{-- <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Other</div>
                           <ul class="pcoded-item pcoded-left-item">
                               <li class="">
                                   <a href="#" class="waves-effect waves-dark">
@@ -61,7 +61,7 @@
                                   </a>
                               </li>
                               
-                          </ul>
+                          </ul> --}}
 
         
                           

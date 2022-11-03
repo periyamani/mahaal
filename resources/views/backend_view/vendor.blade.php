@@ -153,7 +153,7 @@
                         <table class="dt-complex-header table table-bordered" style="border-color: #d4d8dd">
                             <thead>
                                 <tr>
-                                    <th>Reg.No</th>
+                                    <th>S.No</th>
                                     <th>Vendor Name</th>
                                     <th>Mobile No</th>
                                     <th>Category</th>
